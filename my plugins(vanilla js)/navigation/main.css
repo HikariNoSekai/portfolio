@@ -1,0 +1,36 @@
+.navigation-btn{
+	background: none;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
+.navigation{
+	width: 270px;
+	height: 100vh;
+	
+	background: #FFF;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+	transition: transform .2s ease-in;
+	will-change: transform;
+	
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translateX(-100%);
+	z-index: 999;
+}
+
+.active-navigation {
+	transform: translateX(0);
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, .3);
+	z-index: 99;
+}

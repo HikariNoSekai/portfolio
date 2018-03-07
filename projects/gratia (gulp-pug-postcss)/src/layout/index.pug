@@ -1,0 +1,11 @@
+extends ../template.pug
+block link
+	-var selected = 'About'
+block title
+	| Home page
+block content
+	main.maincontent
+		include ../components/main-slider/main-slider
+		include ../components/dishes/dishes
+		include ../components/details/details
+		include ../components/pros/pros

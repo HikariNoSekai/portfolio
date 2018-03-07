@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<title>Daily form</title>
+</head>
+<body>
+	<div class="wrapper">
+		
+			<!-- daily-form -->
+			<div class="daily-form">
+
+				<div class="container">
+
+					<form action="register.php" class="daily-form--wrapper" method="">
+						
+						<div class="daily-form__title-wrap">
+							<picture>
+								<source media="(max-width: 801px)" 
+									srcset="img/sign-up-con.png 1.5x">
+								<img src="img/sign-up-con.png" alt="Sign up icon" class="daily-form__icon">
+							</picture>
+							<span class="daily-form__title-text">Create your free account</span>
+							<p class="daily-form__title-desc">Come and join our cool and amazing community, fill in your details to get started. Already have an account? <a href="#" class="daily-form__link">Log in.</a></p>
+						</div>
+						<div class="daily-form__fields-wrap">
+							<input type="text" name="first_name" placeholder="First name" class="daily-form__field daily-form__field--fn" required>
+							<input type="text" name="last_name" placeholder="Last name" class="daily-form__field daily-form__field--ln" required>
+							<input type="text" name="email" placeholder="Email adress" class="daily-form__field daily-form__field--email" required>
+							<input type="password" name="password" placeholder="Password" class="daily-form__field daily-form__field--password" required>
+						</div>
+						<div class="daily-form__submit-wrap">
+							<input type="submit" name="submit" class="daily-form__submit-btn" value="Sign up for free">
+							<p class="daily-form__submit-terms">By clicking on “Sign up for free”, you agree to the <a href="#" class="daily-form__link"> Terms of Service</a> and the <a href="#" class="daily-form__link">Privacy Policy</a></p>
+						</div>
+					</form>
+				</div>
+			</div><!-- ./daily-form -->
+
+	</div>
+</body>
+</html>

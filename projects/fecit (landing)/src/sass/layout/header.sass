@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800')
+@import url('https://fonts.googleapis.com/css?family=Oswald:700')
+
+
+/**
+ * Primary settings
+
+*
+  box-sizing: border-box
+
+// input settings
+// ::-webkit-input-placeholder
+//   color: #666
+//   opacity: 1
+
+// *:-moz-placeholder
+//   color: #666
+//   opacity: 1
+
+// *::-moz-placeholder
+//   color: #666
+//   opacity: 1
+
+// *:-ms-input-placeholder
+//   color: #666
+//   opacity: 1
+
+html, body
+  width: 100%
+  height: 100%
+
+body
+  position: relative
+  -webkit-tap-highlight-color: fade-out(white, .8)
+  color: #fff
+  background-color: #000
+
+html
+  font-size: 100%
+
+ul, ol
+  list-style: none
+  margin: 0
+  padding: 0
+
+.container
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 15px
+  position: relative
+
+.flex-container
+  display: flex
+  height: 100%
+  align-items: center
+
+.maincontent
+  flex-grow: 1
+
+a
+  display: block
+  text-decoration: none
+  color: #fff
+  &:hover
+    text-decoration: none
+
+h1, h2, h3, h4, h5, h6, p, figure
+  margin: 0
+  padding: 0
+
+// ::-moz-selection
+//   background: #fcfcfc
+//   background: fade-out(white, .8)
+//   text-shadow: none
+
+// ::selection
+//   background: #fcfcfc
+//   background: fade-out(white, .8)
+//   text-shadow: none
+
+// img::selection
+//   background: transparent
+
+// img::-moz-selection
+//   background: transparent
+
+/**
+ * Global text settings
+
+.fecit-text-wrap
+  text-align: left
+  color: white
+  font-family: $mont
+  position: relative
+  z-index: 999
+
+.fecit-heading
+  @include rem(32)
+  @include medsize(low)
+    margin-top: 20px
+    @include rem(82)
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.15rem
+
+.fecit-text
+  @include rem(11)
+  &:before
+    content: ''
+    display: block
+    height: 2px
+    width: 15%
+    margin-bottom: 5px
+    vertical-align: middle
+    background: $maincolor
+  @include medsize(low)
+    @include rem(18)
+    line-height: 1.667
+    font-weight: 300
+    &:before
+      content: ''
+      display: inline-block
+      width: 6%
+      margin-bottom: 0
+      margin-right: 15px
+
+.fecit-tesis
+  font-family: $oswald
+  color: $maincolor
+  @include rem(14)
+  font-weight: 700
+  text-transform: uppercase
+
+.fecit-section-heading
+  font-family: $mont
+  color: #333
+  @include rem(48)
+  line-height: 0.833
+  font-weight: 500
+
+.fecit-section-desc
+  font-family: $mont
+  color: #333
+
+.fecit-autor
+  font-family: $mont
+  color: rgba(121, 121, 121, .3)
+  @include rem(14)
+  font-weight: 700
+  text-transform: uppercase
+
+/**
+  * Nav
+
+.header-nav
+  font-family: $porter
+  margin-bottom: 0
+  text-transform: uppercase
+  border-bottom: 1px solid fade-out(white, .5)
+  background-color: rgba(31, 31, 31, .95)
+  a
+    color: white
+  .nav-item
+    margin-top: 10px
+    text-align: right
+    transition: background 0.3s ease-in-out
+    &:hover
+      color: fade(white, 80%)
+      outline: none
+      background-color: transparent
+    &:active,&:focus
+      outline: none
+      background-color: transparent
+  .nav-link
+    font-family: $oswald
+    @include rem(13)
+    font-weight: 700
+    transition: color .3s ease-in-out
+    &:active, &:focus
+      color: $maincolor
+  @include medsize(medium)
+    padding-top: 20px
+    padding-bottom: 20px
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s
+    letter-spacing: 0.1rem
+    border-bottom: 1px solid rgba(255, 255, 255, .1)
+    background: transparent
+    .nav-item
+      margin: 5px 0 0 50px
+      &:first-child
+        margin-left: 0
+    &.navbar-shrink
+      padding-top: 10px
+      padding-bottom: 10px
+      border-bottom: 1px solid fade-out(white, .5)
+      background: rgba(31, 31, 31, .95)
+    .nav-link
+      transition: color .3s ease-in-out
+      &:hover
+        color: $maincolor
+    .nav-link.active
+      outline: none
+      background-color: rgba(white, .2)
+      &:hover
+        color: $maincolor
+
+.header-nav__toggler
+  @include rem(14)
+  padding: 11px
+  color: white
+  border: 1px solid white
+  transition: color .3 ease-in-out
+  background: transparent
+  border-radius: 0.25rem
+  &:focus, &:hover
+    color: $maincolor
+    text-decoration: none
+  @include media(992px)
+    display: none
+
+.header-nav__brand
+  display: inline-block
+  padding-top: 0.3125rem
+  padding-bottom: 0.3125rem
+  margin-right: 1rem
+  white-space: nowrap
+  @include rem(30)
+  letter-spacing: 0.3rem
+  font-weight: 700
+  &:focus, &:hover
+    text-decoration: none
+  @include medsize(medium)
+    letter-spacing: 1rem
+
+.header-nav__brand--ichar
+  color: $maincolor
+
+.header-nav__collapse
+  flex-basis: 100%
+  align-items: center
+  @include media(992px)
+    display: flex !important
+
+.header-nav--fixedtop
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  z-index: 1004
+
+/**
+ * Slider
+.header-slider__item
+  display: flex
+  flex-flow: column nowrap
+  align-content: center
+  justify-content: center
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100vh
+    background: rgba(0, 0, 0, .3)
+  @include medsize(low)
+    height: 100%
+    padding: 0
+
+.header-slider__item--bg1
+  width: 100%
+  height: 100vh
+  background: url('../img/slider/intro-bg.jpg') top center no-repeat fixed
+  background-size: cover
+
+.header-slider__project
+  display: block
+  width: 100%
+  border: 1px solid #fff
+  background: rgba(255, 255, 255, .1)
+  margin-top: 20px
+  color: #fff
+  font-family: $oswald
+  font-weight: 700
+  @include rem(12)
+  padding: 7px
+  text-decoration: none
+  text-align: center
+  text-transform: uppercase
+  transition: background .3s ease-in-out, border .3s ease-in-out, color .3s ease-in-out
+  &:active, &:focus
+    color: #333
+    background: $maincolor
+    border: 1px solid $maincolor
+
+  @include medsize(low)
+    margin-top: 40px
+    @include rem(14)
+    padding: 19px 34px
+    width: 15%
+    border: 1px solid #FFF
+    background: rgba(255, 255, 255, .1)
+    transition: background .3s ease-in-out, border .3s ease-in-out, color .3s ease-in-out
+    &:hover
+      color: #333
+      background: $maincolor
+      border: 1px solid $maincolor
+
+/**
+ * scroll up button
+
+.btn-scroll
+  position: absolute
+  bottom: 85px
+  transition: background 0.3s ease-in-out
+  text-align: left
+  pointer-events: none
+  cursor: default
+  opacity: 0
+  will-change: opacity
+  @include medsize(medium)
+    opacity: 1
+    pointer-events: auto
+    cursor: pointer
+    &:hover > .btn__arrow
+      opacity: 1
+    &:hover > .btn__text
+      color: rgba(255, 255, 255, 1)
+    .btn__arrow
+      transform: rotate(90deg)
+      margin-right: 10px
+      opacity: .25
+      transition: opacity .3s ease-in-out
+    .btn__text
+      color: rgba(255, 255, 255, .25)
+      text-transform: uppercase
+      font-family: $oswald
+      @include rem(13)
+      margin-top: 15px
+      font-weight: 700
+      transition: color .3s ease-in-out
+
+/**
+ * Slider nav
+
+.slider-nav
+  position: absolute
+  bottom: 30px
+  right: 25%
+  .slider-nav__list
+    margin: 0
+  .slider-nav__item
+    display: inline-block
+    margin-left: 15px
+    &:first-child
+      margin-left: 0
+  .nav__arrow
+    cursor: pointer
+  .nav__arrow--left
+    transform: rotate(180deg)
+  .nav__arrow--nolist
+    opacity: .5
+  @include medsize(medium)
+    right: 20%
+    bottom: 82px

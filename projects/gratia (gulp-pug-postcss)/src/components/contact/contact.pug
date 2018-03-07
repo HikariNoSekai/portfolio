@@ -1,0 +1,34 @@
+-
+	var contactTitle = {
+		title: 'book a table',
+		descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		backside: 'Gratia'
+	}
+section.contact
+	include ../heading/heading
+	+heading(contactTitle)
+	form.contact__form(action='' method='post')
+		input.contact__field.contact__day(type='day' placeholder='dd' name='day' required='true')
+		input.contact__field.contact__month(type='text' placeholder='mm' name='month' required='true')
+		input.contact__field.contact__year(type='year' placeholder='yyyy' name='year' required='true')
+		input.contact__field.contact__hour(type='text' placeholder='hour' name='hour' required='true')
+		input.contact__field.contact__numpeople(type='text' placeholder='number of people' name='numbOfPeople' required='true')
+		input.contact__field.contact__fio(type='text' placeholder='first name and last name' name='fio' required='true')
+		input.contact__field.contact__phone(type='tel' placeholder='phone number' name='phoneNumber' required='true')
+		input.contact__field.contact__email(type='email' placeholder='e-mail' name='email' required='true')
+		select.contact__field.contact__prepare-menu(name='prepareMenu' required='true')
+			option(label='prepare menu' selected disabled) prepare menu
+			optgroup(label='Main dishes')
+				option(value='Main dish 1') Main dish 1
+			optgroup(label='Soups')
+				option(value='Soup 1') Soup 1
+			optgroup(label='Hamburgers')
+				option(value='Chicken burger') Chicken burger
+			optgroup(label='Desserts')
+				option(value='Cheescake 1') Cheesecake 1
+			optgroup(label='Barbecue')
+				option(value='Barbecue 1') Barbecue 1
+			optgroup(label='Salads')
+				option(value='Salad 1') Salad 1
+		textarea.contact__field.contact__message(placeholder='Your message...' name='message' required='true')
+		a.contact__send.gratia-btn send

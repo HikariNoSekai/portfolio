@@ -1,0 +1,8 @@
+mixin menucard(obj)
+	a.menucard__link(href=obj.link)
+		figure.menucard__img-wrap
+			img.menucard__img(src=obj.img alt=obj.title title=obj.title)
+		.menucard__text-wrap
+			h3.menucard__title.gratia-heading= obj.title
+			.menucard__line
+			p.menucard__descr.gratia-descr= obj.descr

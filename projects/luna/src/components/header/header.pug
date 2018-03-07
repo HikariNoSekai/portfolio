@@ -1,0 +1,23 @@
+-
+    var items = [
+        { title: 'Home', id: '#home'},
+        { title: 'About us', id: '#about'},
+        { title: 'Portfolio', id: '#portfolio'},
+        { title: 'Mobile Apps', id: '#mobile'},
+        { title: 'Social', id: '#social' }
+    ]
+
+header.main-header.container
+    .logo
+        a.logo__link(href="index.html")
+            img.logo__img(src="./img/logo.png" alt="Logo") 
+
+    button.menu-btn#js-menu-btn
+        span.menu-title Menu
+        i.material-icons menu  
+
+    nav.nav#js-nav
+        ul.nav__list
+            each item in items
+                li.nav__item
+                    a.nav__link.js-scroll(href=item.id)= item.title

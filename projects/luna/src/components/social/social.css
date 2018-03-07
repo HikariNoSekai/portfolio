@@ -1,0 +1,123 @@
+.social {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.social__list {
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    width: 100%;
+    @media (--small) {
+        flex-flow: column nowrap;
+        height: 100%;
+        display: flex;
+    }
+}
+
+.social__item {
+    position: relative;
+    transform: scale(0.8);
+    transition: all 1s ease-out;
+    width: 55%;
+    opacity: 0.5;
+}
+
+.social__item.slick-center {
+    transform: scale(0.9);
+    transition: all 1s ease-out;
+    opacity: 1;
+}
+
+.social__title {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+    @media (--small) {
+        padding: 20px *;
+    }
+}
+
+.social__item {
+    width: 650px;
+    padding: 50px 30px;
+    margin: * 10px;
+    @media (--small) {
+        padding: 20px 0;
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+.social__item:hover {
+    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.3);
+    transition: box-shadow .3s ease-in .2s;
+    @media (--medium) {
+        box-shadow: none;
+    }
+}
+
+.social__title-link {
+    width: 100%;
+    text-align: center;
+}
+
+.social__descr {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: $robotolight;
+    @media (--small) {
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+}
+
+.social__link {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social__autor {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.autor__descr {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: $roboto;
+    letter-spacing: 0.4px;
+    @media (--small) {
+        font-size: 0.7rem;
+        line-height: 0.8rem;
+    }
+}
+
+.autor__name,
+p.autor__nik {
+    margin: 0;
+}
+
+.autor__link {
+    color: #5db0ff;
+    padding: 0 5px;
+}

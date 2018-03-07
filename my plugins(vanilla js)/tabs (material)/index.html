@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <style>
+        .message {
+            display: none;
+        }
+        .message--show {
+            display: block;
+        }
+
+        .first {
+            width: 200px;
+            height: 200px;
+            background: #000;
+            margin: 100px auto;
+            position: relative;
+        }
+        .second {
+            width: 150px;
+            height: 150px;
+            background: red;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .third {
+            width: 100px;
+            height: 100px;
+            background: green;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+    </style>
+
+    <button id="btn">Show</button>
+    <div id="message" class="message">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, explicabo sequi cum laboriosam, id dignissimos reprehenderit consequatur atque molestias debitis assumenda libero sapiente eveniet laudantium inventore culpa quisquam, exercitationem maiores.
+    </div>
+
+    <div class="first">
+        <div class="second">
+            <div class="third"></div>
+        </div>
+    </div> -->
+
+    <!-- <input type="text" id="text">
+    
+    <ul class="list"></ul> -->
+
+    <style>
+        .tabs-wrap {
+            max-width: 500px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .tab-btns {
+            display: flex;
+            position: relative;
+        }
+        
+        .line {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            /*width: calc(100% / 4);*/
+            height: 2px;
+            background: lightcoral;
+            /* display: block; */
+            transition: 0.3s ease-in-out;
+            /*     height: 3px;
+            width: 20%;
+            background: red;
+            position: relative;
+            left: 0;
+            transition: 0.3s ease-in-out; */
+        }
+        
+        .tab-btn {
+            padding: 5px 0;
+            /*width: calc(100% / 4);*/
+            text-decoration: none;
+            font-size: 18px;
+            font-family: sans-serif;
+            flex: 1;
+            text-align: center;
+            position: relative;
+            z-index: 999;
+        }
+        
+        .tabs-content {
+            width: 100%;
+            margin-top: 15px;
+        }
+        
+        .tab-content {
+            border: 1px solid lightblue;
+            display: none;
+        }
+        
+        .active-tab {
+            color: green;
+        }
+        
+        .active-content {
+            display: block;
+        }
+    </style>
+
+    <div class="tabs-wrap">
+        <div class="tab-btns">
+            <a href="#tab-1" class="tab-btn active-tab">Tab 1</a>
+            <a href="#tab-2" class="tab-btn">Tab 2</a>
+            <a href="#tab-3" class="tab-btn">Tab 3</a>
+            <a href="#tab-4" class="tab-btn">Tab 4</a>
+            <span class="line"></span>
+        </div>
+
+        <section class="tabs-content">
+            <article class="tab-content active-content" id="tab-1">
+                Tab content 1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis dolor ad ut reprehenderit quae optio suscipit eum, veniam aperiam eius? Aut, odio beatae quod iusto reprehenderit alias nemo dolore quaerat.
+            </article>
+            <article class="tab-content" id="tab-2">
+                Tab content 2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis dolor ad ut reprehenderit quae optio suscipit eum, veniam aperiam eius? Aut, odio
+            </article>
+            <article class="tab-content" id="tab-3">
+                Tab content 3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+            </article>
+            <article class="tab-content" id="tab-4">
+                Tab content 4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+            </article>
+        </section>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

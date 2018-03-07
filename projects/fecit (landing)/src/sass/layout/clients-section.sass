@@ -1,0 +1,124 @@
+/**
+ * Tesis with image background
+
+.tesis__img-wrap
+	background: url('../img/clients-bg.jpg') no-repeat center top fixed
+	background-size: cover
+	height: 100vh
+	@include mediamax(768px)
+		height: 400px
+	@include mediamax(560px)
+		height: 300px
+
+
+/**
+ * Clients section
+.clients-section
+	background: #FFF
+	border-bottom: 1px solid #EDEDED
+
+.clients__says-wrap
+	position: relative
+	width: 45%
+	margin: 0 auto
+	padding: 30px 0 82px 0
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	@include medsize(medium)
+		padding: 100px 0 152px 0
+
+.clients__says-heading
+	@include rem(11)
+	@include medsize(medium)
+		@include rem(14)
+
+.clients__list
+	margin-top: 20px
+	@include medsize(medium)
+		margin-top: 50px
+
+.clients__desc
+	@include rem(18)
+	line-height: 1.429
+	font-weight: 500
+	@include medsize(medium)
+		@include rem(28)
+
+.clients__autor
+	@include rem(11)
+	margin-top: 20px
+	position: relative
+	padding-bottom: 18px
+	@include medsize(medium)
+		@include rem(14)
+		margin-top: 40px
+	&:before
+		content: ''
+		position: absolute
+		left: 50%
+		bottom: 0
+		transform: translateX(-50%)
+		height: 2px
+		width: 70px
+		background: $maincolor
+
+/**
+ * clients nav
+
+.clients-nav
+  position: absolute
+  bottom: 30px
+  width: 100%
+  // right: 25%
+  margin: 0 auto
+  .clients-nav__list
+    margin: 0
+  .clients-nav__item
+    display: inline-block
+    margin-left: 15px
+    &:first-child
+      margin-left: 0
+  .clients__arrow
+    cursor: pointer
+  .clients__arrow--left
+    transform: rotate(180deg)
+  .clients__arrow--nolist
+    opacity: .5
+  .clients-nav__count
+  	font-family: 'Montserrat', Helvetica, Arial, sans-serif
+  	@include rem(11)
+  	font-weight: 400
+  	line-height: 2.143
+		color: #333
+		@include medsize(medium)
+			@include rem(14)
+  @include medsize(medium)
+    // right: 42.5%
+    margin: 0 auto
+    bottom: 62px
+
+/**
+ * Clients companies
+
+.clients-companies-wrap
+	background: #FFF
+	padding: 90px 0
+	@include mediamax(768px)
+		padding: 50px 0
+	@include mediamax(560px)
+		padding: 20px 0
+
+.clients-companies__list
+	display: flex
+	flex-flow: row nowrap
+	justify-content: space-between
+	@include mediamax(768px)
+		justify-content: center
+		align-items: center
+		flex-flow: column nowrap
+
+.clients-companies__item
+	@include mediamax(768px)
+		margin-top: 15px

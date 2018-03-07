@@ -1,0 +1,5 @@
+.aside {
+    position: absolute 0 0 * *;
+    size: 300px;
+    background: lightcoral;
+}

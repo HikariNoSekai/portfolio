@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sedona</title>
+  <!--[if lt IE 8]>
+    <div style=' clear: both; text-align:center; position: relative;‘>
+        <a href=“http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode“>
+            <img src=“http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg” border=“0" height=“42” width=“820" alt=“You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.” />
+        </a>
+    </div>
+  <![endif]-->
+  <!--[if lt IE 9]>
+    <script type=“text/javascript” src=“js/html5.js”></script>
+    <link rel=“stylesheet” type=“text/css” media=“screen” href=“css/ie.css”>
+  <![endif]-->
+  <script src="./js/main.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="wrapper wrapper--close" id="wrapper">
+
+    <!-- header -->
+    <header class="header">
+
+      <div class="container">
+        <!-- main navigation -->
+        <nav class="header__nav nav nav--close" id="nav">
+          <button class="nav__close-icon" id="btn-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <div class="nav__menu-block">
+            <button class="nav__menu-icon" id="btn-menu">
+              <i class="fa fa-bars" aria-hidden="true" ></i>
+            </button>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="./photo-page.html" class="nav__link">фото и видео</a>
+            </li>
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">
+              <picture class="nav__logo">
+                <source srcset="img/logotype-tablet.svg" media="(max-width: 1024px)">
+                <source srcset="img/logotype-desktop.svg">
+                <img srcset="img/logotype-desktop.svg" alt="logo">
+              </picture>
+            </a>
+          </li>
+            <li class="nav__item">
+              <a href="./form.html" class="nav__link">форма отзыва</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">html academy</a>
+            </li>
+          </ul>
+        </nav> <!-- ./main navigation -->
+
+        <div class="header__streamer">
+          <img src="img/SEDONA.svg" alt="streamer" class="header__streamer-img">
+        </div>
+      </div>
+
+
+      <!-- <div class="sub-header"></div> -->
+
+    </header> <!-- ./header -->
+
+    <div class="maincontent">
+
+      <div class="container">
+
+
+        <!-- desc wrap -->
+        <div class="desc-wrap">
+
+          <h2 class="desc-wrap__title">оставьте свой отзыв</h2>
+
+          <p class="desc-wrap__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </p>
+
+        </div> <!-- ./desc wrap -->
+
+        <!-- form -->
+        <form action="" class="form">
+
+          <div class="form__first-section">
+
+            <fieldset class="form__impression">
+
+              <h3 class="form__impression-title">ваше общее впечатление:</h3>
+
+              <ul class="form__impression-list">
+                <li class="form__impression-item">
+                  <input type="radio" name="impression" id="positive" class="form__impression-radio" checked>
+                  <label for="positive" class="form__impression-label">
+                    <span class="form__impression-text">Скорее положительное</span>
+                  </label>
+                </li>
+
+                <li class="form__impression-item">
+                  <input type="radio" name="impression" id="negative" class="form__impression-radio">
+                  <label for="negative" class="form__impression-label">
+                    <span class="form__impression-text">Скорее отрицательное</span>
+                  </label>
+                </li>
+
+                <li class="form__impression-item">
+                  <input type="radio" name="impression" id="dont-know" class="form__impression-radio">
+                  <label for="dont-know" class="form__impression-label">
+                    <span class="form__impression-text">Затрудняюсь ответить</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="form__about">
+
+              <h3 class="form__about-title">представьтесь, пожалуйста!</h3>
+
+              <ul class="form__about-list">
+                <li class="form__about-item">
+                  <label for="first-name" class="form__about-label">
+                    Имя:
+                  </label>
+                  <input type="text" id="first-name" class="form__about-text-field" value="" placeholder="Петр">
+                </li>
+
+                <li class="form__about-item">
+                  <label for="second-name" class="form__about-label">
+                    Фамилия:
+                  </label>
+                  <input type="text" id="second-name" class="form__about-text-field" value="" placeholder="Иванов">
+                </li>
+
+                <li class="form__about-item">
+                  <label for="patronymic" class="form__about-label">
+                    Отчество:
+                  </label>
+                  <input type="text" id="patronymic" class="form__about-text-field" value="" placeholder="Александрович">
+                </li>
+              </ul>
+
+            </fieldset>
+
+          </div>
+
+
+          <fieldset class="form__contacts">
+
+            <h3 class="form__contacts-title">
+              <span>контактная информация</span>
+            </h3>
+
+            <div class="form__contacts-forms">
+              <div class="form__contacts-phone">
+
+                <label for="phone" class="form__contacts-phone-text">телефон:</label>
+                <div class="form__contacts-phone-field">
+                  <input type="phone" class="form__contacts-input" id="phone" placeholder="Введите номер">
+                  <div class="form__contacts-icon">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="form__contacts-email">
+
+                <label for="email" class="form__contacts-email-text">элекстроная почта:</label>
+                <div class="form__contacts-email-field">
+                  <input type="email" class="form__contacts-input" id="email" placeholder="Введите номер">
+                  <div class="form__contacts-icon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="form__contacts-email">
+
+
+
+
+            </div>
+
+          </fieldset>
+
+          <div class="form__places-wrap">
+                <h2 class="form__heading">посещенные достопремичательности:</h2>
+                <div class="form__places-input-wrap">
+                    <div>
+                        <input type="checkbox" name="place" value="DevilBridge" class="form__place-checkbox" id="DevilBridge" checked>
+                        <label for="DevilBridge" class="form__place-name">Мост Дьявола</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="place" value="RingPeak" class="form__place-checkbox" id="RingPeak" checked>
+                        <label for="RingPeak" class="form__place-name">Гора-Колокол</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="place" value="Slide-park" class="form__place-checkbox" id="Slide-park" checked>
+                        <label for="Slide-park" class="form__place-name">Слайд-парк</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="place" value="RedMountains" class="form__place-checkbox" id="RedMountains">
+                        <label for="RedMountains" class="form__place-name">Красные скалы</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__emotion-wrap">
+                <h2 class="form__heading">Опишите свои эмоции:</h2>
+                <textarea class="form__emotion-text" name="emotion_text" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
+            <div class="form__submit-wrap">
+                <button class="form__send" name="send">
+                    Отправить отзыв
+                </button>
+                <p class="form__need-stroke">* - обязательные поля</p>
+            </div>
+
+        </form> <!-- ./form -->
+
+      </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+
+      <div class="container footer__container">
+        <!-- footer hash -->
+        <div class="footer__hash">
+          <h3 class="footer__hash-title">
+            #visitsedona
+          </h3>
+        </div> <!-- ./footer hash -->
+
+        <!-- footer social -->
+        <div class="footer__social social">
+          <a href="#" class="social__twitter social__icon">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="social__facebook social__icon">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="social__youtube social__icon">
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          </a>
+        </div> <!-- ./footer social -->
+
+        <!-- footer label -->
+        <!-- <div class="footer__label">
+          <span class="footer__label-text">разработано</span>
+          <img src="img/htmlacademy.svg" alt="label htmlacademy">
+        </div>  -->
+      </div>
+
+    </footer> <!-- ./footer -->
+
+  </div>
+</body>
+</html>

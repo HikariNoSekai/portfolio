@@ -1,0 +1,29 @@
+.heading-wrap {
+	position: relative;
+	width: 100%;
+}
+
+.heading-text-wrap {
+	position: absolute;
+	@add-mixin poscenter;
+	width: 100%;
+	text-align: center;
+}
+
+.section-heading {
+	position: relative;
+	margin-bottom: 15px;
+	@media(--large) {
+		margin-bottom: 35px;
+	}
+}
+
+.section-descr {
+	position: relative;
+}
+
+.section-back-text {
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}

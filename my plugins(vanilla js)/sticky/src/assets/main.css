@@ -1,0 +1,15 @@
+@import "_mixin.css";
+@import "libs.css";
+@import "fonts.css";
+@import "adjustment.css";
+
+/* 
+    Components
+*/
+
+@import "../components/header/header.css";
+@import "../components/footer/footer.css";
+@import "../components/aside/aside.css"
+/*
+    Pages
+*/

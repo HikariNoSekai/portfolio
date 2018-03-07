@@ -1,0 +1,17 @@
+[
+	{
+		"title": "desserts",
+		"img": "img/desserts.jpeg",
+		"descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+	},
+	{
+		"title": "smoothies",
+		"img": "img/smoothies.jpeg",
+		"descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+	},
+	{
+		"title": "breakfast",
+		"img": "img/breakfast.jpeg",
+		"descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+	}
+]

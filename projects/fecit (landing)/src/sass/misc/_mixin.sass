@@ -1,0 +1,37 @@
+$mainfont: 16
+$maincolor: #5cf1be
+$mont: 'Montserrat', Helvetica, Arial, sans-serif
+$oswald: 'Oswald', Helvetica, Arial, sans-serif
+$porter: 'Porter Bold DEMO', Helvetica, Arial, sans-serif
+
+@mixin centerX
+	left: 50%
+	transform: translateX(-50%)
+
+@mixin centerXY
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+
+// @mixin mainbackground
+// 	background:
+
+@mixin rem($fontsize)
+	font-size: $fontsize/$mainfont +rem
+	line-height: (($fontsize+2)/$mainfont) +rem
+
+@mixin medsize($size)
+	@if ($size == 'medium')
+		@media(min-width:992px)
+			@content
+	@if ($size == 'low')
+		@media(min-width:768px)
+			@content
+
+@mixin media($size)
+	@media(min-width:$size)
+		@content
+
+@mixin mediamax($size)
+	@media(max-width:$size)
+		@content

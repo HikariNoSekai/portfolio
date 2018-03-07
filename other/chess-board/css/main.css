@@ -1,0 +1,85 @@
+@import url('../libs/normalize/normalize.css');
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  margin: 5% 20%;
+}
+
+.board {
+  width: 800px;
+  height: 800px;
+  list-style: none;
+  font-size: 0;
+  background: #FFF;
+  border: solid black;
+  padding: 0;
+  vertical-align: top;
+}
+
+.board__square {
+position: relative;
+  display: inline-block;
+  width: 12.5%;
+  height: 12.5%;
+  vertical-align: top;
+}
+
+.circle{
+  position: absolute;
+  display: inline-block;
+  width: 80%;
+  height: 80%;
+   margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.circle-a{
+  background-color: #6A1818;
+  border: solid #491212;
+}
+
+.circle-b{
+  background-color: #DC143C;
+  border: solid #9C3046;
+}
+
+
+li:nth-of-type(16n+9) {
+  background-color: black;
+}
+
+li:nth-of-type(16n+11) {
+  background-color: black;
+}
+
+li:nth-of-type(16n+13) {
+  background-color: black;
+}
+
+li:nth-of-type(16n+15) {
+  background-color: black;
+}
+
+li:nth-of-type(16n+2) {
+  background-color: black;
+}
+
+li:nth-of-type(16n+4) {
+  background-color: black;
+}
+
+li:nth-of-type(16n+6) {
+  background-color: black;
+}
+
+li:nth-of-type(16n+8) {
+  background-color: black;
+}

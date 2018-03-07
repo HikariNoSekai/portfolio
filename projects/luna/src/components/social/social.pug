@@ -1,0 +1,46 @@
+-
+    var autors = [
+        {link: '#PaymeApp', 
+        text: 'win Apple Design Award! Big thanks to', 
+        link2: '@DigitalStudio!',
+        coment: 'They are aggressive in trying out new technologies and new design techniques. The best guys I\'ve worked with',
+        img: './img/frank.png',
+        name: 'Frank Underwood',
+        link3: '@PresidentFrank'
+        },
+         {link: '#PaymeApp', 
+        text: 'win Apple Design Award! Big thanks to', 
+        link2: '@DigitalStudio!',
+        coment: 'They are aggressive in trying out new technologies and new design techniques. The best guys I\'ve worked with',
+        img: './img/frank.png',
+        name: 'Frank Underwood',
+        link3: '@PresidentFrank'
+        },
+         {link: '#PaymeApp', 
+        text: 'win Apple Design Award! Big thanks to', 
+        link2: '@DigitalStudio!',
+        coment: 'They are aggressive in trying out new technologies and new design techniques. The best guys I\'ve worked with',
+        img: './img/frank.png',
+        name: 'Frank Underwood',
+        link3: '@PresidentFrank'
+        } 
+    ]
+section.social#social 
+    .social__title
+        a.social__title-link(href='#')
+            img.social__title-img(src='./img/twiter.png')
+    .social__slider
+        ul.social__list
+            each autor in autors
+                li.social__item
+                    a.social__link(href='#')
+                        .social__descr
+                            a.autor__link(href='#')= autor.link 
+                            span.social__text= autor.text 
+                            a.autor__link(href='#')= autor.link2
+                            span.social__text= autor.coment
+                        .social__autor
+                            img.autor__img(src=autor.img)
+                            .autor__descr
+                                p.autor__name= autor.name
+                                a.autor__link(href='#')= autor.link3          

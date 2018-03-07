@@ -1,0 +1,161 @@
+/* about */
+
+.about-section
+	padding: 90px 0 0 0
+	background: #f0f0f0
+	@include mediamax(996px)
+		padding: 60px 0 0 0
+	@include mediamax(778px)
+		padding: 40px 0 0 0
+
+.about-section__subtitle
+	text-align: center
+	max-width: 850px
+	@include rem(28)
+	font-weight: 500
+	line-height: 1.429
+	margin: 30px auto 0 auto
+	@include mediamax(996px)
+		max-width: 800px
+	@include mediamax(778px)
+		max-width: 600px
+		@include rem(18)
+	@include mediamax(470px)
+		margin-top: 20px
+
+.about-section__img-wrap
+	max-width: 770px
+	margin: 50px auto 0 auto
+	position: relative
+	&:after
+		content: ''
+		display: block
+		width: 40px
+		height: 46px
+		position: absolute
+		@include centerXY
+		background: url(../img/play.png) no-repeat center center
+		cursor: pointer
+	@include mediamax(1200px)
+		max-width: 700px
+	@include mediamax(778px)
+		margin: 30px auto 0 auto
+
+
+.about-section__img
+	width: 100%
+
+.about-section__desc
+	display: flex
+	margin-top: -120px
+	padding: 0 100px 0 0
+	@include mediamax(1200px)
+		padding: 0 20px 0 0
+	@include mediamax(996px)
+		padding: 0 5px 0 0
+	@include mediamax(778px)
+		padding: 0
+	@include mediamax(680px)
+		flex-direction: column
+		padding-bottom: 10px
+
+.about-section__quote
+	width: 630px
+	padding: 185px 70px 65px 0
+	position: relative
+	@include mediamax(1048px)
+		padding: 185px 20px 65px 40px
+	@include mediamax(996px)
+		padding: 155px 20px 45px 40px
+	@include mediamax(778px)
+		padding: 155px 20px 45px 0
+	@include mediamax(680px)
+		padding: 155px 20px 20px 0
+		width: 100%
+	&:before
+		content: ''
+		display: block
+		width: 41px
+		height: 28px
+		position: absolute
+		top: 88px
+		left: 100px
+		background: url(../img/quote-icon.png) no-repeat center center
+		background-size: cover
+		@include mediamax(1048px)
+			top: 135px
+		@include mediamax(996px)
+			width: 28px
+			height: 19px
+		@include mediamax(778px)
+			display: none
+
+.about-section__text-wrap
+	width: 570px
+	background: #fff
+	padding: 185px 63px 65px 58px
+	@include mediamax(996px)
+		padding: 155px 43px 45px 38px
+	@include mediamax(778px)
+		padding: 155px 20px 45px 20px
+		width: 100%
+	@include mediamax(680px)
+		padding: 20px
+
+.about-section__text
+	@include rem(16)
+	font-weight: 300
+	line-height: 1.75
+	text-align: left
+	margin-top: 25px
+	&:first-child
+		margin-top: 0px
+	@include mediamax(768px)
+		@include rem(14)
+
+.quote__avatar
+	width: 70px
+	height: 70px
+	border-radius: 50%
+	background: url(../img/avatar13.png) no-repeat center center
+	background-size: cover
+	display: inline-block
+	vertical-align: top
+	@include mediamax(778px)
+		width: 50px
+		height: 50px
+
+.quote__desc
+	@include rem(22)
+	line-height: 1.545
+	font-weight: 400
+	text-align: left
+	@include mediamax(1200px)
+		@include rem(20)
+	@include mediamax(996px)
+		@include rem(18)
+	@include mediamax(778px)
+		@include rem(16)
+
+.quote__desc-wrap
+	display: inline-block
+	width: calc(98% - 70px)
+	vertical-align: top
+	padding-left: 29px
+	@include mediamax(778px)
+		padding-left: 15px
+	@include mediamax(778px)
+		width: calc(98% - 50px)
+
+.about-section__author
+	font-family: $mont
+	color: rgba(121, 121, 121, 0.5)
+	margin-top: 55px
+	text-transform: uppercase
+	text-align: left
+	@include mediamax(1200px)
+		margin-top: 25px
+	@include mediamax(996px)
+		@include rem(15)
+	@include mediamax(778px)
+		@include rem(14)

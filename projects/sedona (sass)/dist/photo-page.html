@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Basic page needs
+	============================================ -->
+
+	<meta charset="UTF-8">
+	<title>Sedona template</title>
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta ext install vimStylext install vimStyle
+	e
+	name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Mobile specific metas
+	============================================ -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Libs CSS
+	============================================ -->
+	<link rel="stylesheet" href="css/libs.css">
+
+
+	<!-- modal CSS
+	============================================ -->
+	<link rel="stylesheet" href="css/the-modal.css" media="all">
+
+	<!-- Favicon
+	============================================ -->
+	<!-- <link rel="shortcut icon" type="images/x-icon" href="images/fav_icon.ico"> -->
+
+	<!-- Theme CSS
+	============================================ -->
+	<link rel="stylesheet" href="css/photo.css">
+
+
+	<!-- Media Queries CSS
+	============================================ -->
+
+	<link rel="stylesheet" href="style/responsive.css">
+
+	<script src="./js/main.js" charset="utf-8"></script>
+
+	<!-- Old IE
+	============================================ -->
+
+	<!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+		<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+			<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+		</a>
+	</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+
+</head>
+<body>
+<div class="wrapper wrapper--close" id="wrapper">
+	<!-- - - - -  header - - - - -->
+
+	<header class="header">
+		<div class="container">
+        <!-- main navigation -->
+        <nav class="header__nav nav nav--close" id="nav">
+          <button class="nav__close-icon" id="btn-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <div class="nav__menu-block">
+            <button class="nav__menu-icon" id="btn-menu">
+              <i class="fa fa-bars" aria-hidden="true" ></i>
+            </button>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a title="Главная" href="./index.html" class="nav__link">главная</a>
+            </li>
+            <li class="nav__item">
+              <a title="Фото и видео" href="./photo-page.html" class="nav__link">фото и видео</a>
+            </li>
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">
+              <picture class="nav__logo">
+                <source srcset="img/logotype-tablet.svg" media="(max-width: 1024px)">
+                <source srcset="img/logotype-desktop.svg">
+                <img srcset="img/logotype-desktop.svg" alt="logo">
+              </picture>
+            </a>
+          </li>
+            <li class="nav__item">
+              <a title="Форма отзыва" href="#" class="nav__link">форма отзыва</a>
+            </li>
+            <li class="nav__item">
+              <a href="https://academy.beetroot.se" class="nav__link">Beetroot academy</a>
+            </li>
+          </ul>
+        </nav> <!-- ./main navigation -->
+
+        <div class="header__streamer">
+          <img src="img/SEDONA.svg" alt="streamer" class="header__streamer-img">
+        </div>
+      </div>
+
+
+<!-- <div class="sub-header"></div> -->
+	</header> <!-- /.header -->
+
+
+	<!-- maincontent
+	============================================ -->
+
+	<div class="photocontent">
+
+			<!-- first text wrap -->
+			<div class="photo-page__text-wrap">
+				<h2 class="photo-page__title">фото и видео</h2>
+				<p class="photo-page__desc">не можете решиться на путишествие из-за курса? фотографии помогут вам забыть о политике и экономике.</p>
+			</div><!-- ./first text wrap -->
+
+			<!-- photo gallery -->
+			<div class="gallery">
+
+				<!-- gallery list -->
+				<ul class="gallery__list">
+
+					<!-- gallery item -->
+					<li class="gallery__item gallery__item--road">
+						<a href="#popup1" class="gallery__link">
+							<figure class="gallery__img-wrap">
+								<img src="img/gallery/photo-1-desktop.jpg" alt="road" class="gallery__img" title="Road">
+							</figure>
+						<!-- </a> -->
+							<div class="gallery__desc-wrap">
+
+								<!-- title and autor wrap -->
+								<div class="gallery__info-wrap">
+									<h3 class="gallery__title">неродные просторы</h3>
+								    <span class="gallery__autor">Автор фото: Борис</span>
+								</div><!-- ./title and autor wrap -->
+
+								<!-- like wrap -->
+								<div class="gallery__like-wrap">
+									<label for="button" class="gallery__checkbox-btn">
+										<input type="checkbox" class="gallery__like-btn" id="button">
+										<i title="Like" class="fa fa-thumbs-o-up gallery__like-btn-img" aria-hidden="true"></i>
+									</label>
+									<span class="gallery__like-count">1350</span>
+								</div><!-- ./like wrap -->
+							</div>
+							<a href="#x" class="gallery__overlay" id="popup1"></a>
+			    	        <div class="gallery__popup">
+								<img src="img/gallery/photo-1-desktop.jpg" alt="road" class="is-image" title="Road">
+								<a class="gallery__close" title="Закрыть" href="#close"></a>
+							</div>
+						</a>
+					</li><!-- ./gallery item -->
+
+					<!-- gallery item -->
+					<li class="gallery__item gallery__item--flowers">
+						<a href="#popup2" class="gallery__link">
+							<figure class="gallery__img-wrap">
+								<img src="img/gallery/photo-2-desktop.jpg" alt="flowers" class="gallery__img" title="Flowers">
+							</figure>
+							<div class="gallery__desc-wrap">
+
+								<!-- title and autor wrap -->
+								<div class="gallery__info-wrap">
+									<h3 class="gallery__title">местная растительность</h3>
+								    <span class="gallery__autor">Автор фото: Сергей</span>
+								</div><!-- ./title and autor wrap -->
+
+								<!-- like wrap -->
+								<div class="gallery__like-wrap">
+									<label for="button2" class="gallery__checkbox-btn">
+										<input type="checkbox" class="gallery__like-btn" id="button2">
+										<i title="Like" class="fa fa-thumbs-o-up gallery__like-btn-img" aria-hidden="true"></i>
+									</label>
+									<span class="gallery__like-count">143</span>
+								</div><!-- ./like wrap -->
+							</div>
+							<a href="#x" class="gallery__overlay" id="popup2"></a>
+			    	        <div class="gallery__popup">
+								<img src="img/gallery/photo-2-desktop.jpg" alt="flowers" class="is-image" title="flowers">
+								<a class="gallery__close" title="Закрыть" href="#close"></a>
+							</div>
+						</a>
+					</li><!-- ./gallery item -->
+
+					<!-- gallery item -->
+					<li class="gallery__item gallery__item--forest">
+						<a href="#popup3" class="gallery__link">
+							<figure class="gallery__img-wrap">
+								<img src="img/gallery/photo-3-desktop.jpg" alt="Forest" class="gallery__img" title="Forest">
+							</figure>
+							<div class="gallery__desc-wrap">
+
+								<!-- title and autor wrap -->
+								<div class="gallery__info-wrap">
+									<h3 class="gallery__title">дорога на север</h3>
+								    <span class="gallery__autor">Автор фото: Пётр</span>
+								</div><!-- ./title and autor wrap -->
+
+								<!-- like wrap -->
+								<div class="gallery__like-wrap">
+									<label for="button3" class="gallery__checkbox-btn">
+										<input type="checkbox" class="gallery__like-btn" id="button3">
+										<i title="Like" class="fa fa-thumbs-o-up gallery__like-btn-img" aria-hidden="true"></i>
+									</label>
+									<span class="gallery__like-count">96</span>
+								</div><!-- ./like wrap -->
+							</div>
+							<a href="#x" class="gallery__overlay" id="popup3"></a>
+			    	        <div class="gallery__popup">
+								<img src="img/gallery/photo-3-desktop.jpg" alt="Forest" class="is-image" title="Forest">
+								<a class="gallery__close" title="Закрыть" href="#close"></a>
+							</div>
+						</a>
+					</li><!-- ./gallery item -->
+
+					<!-- gallery item -->
+					<li class="gallery__item gallery__item--canyon">
+						<a href="#popup4" class="gallery__link">
+							<figure class="gallery__img-wrap">
+								<img src="img/gallery/photo-4-desktop.jpg" alt="Canyon" class="gallery__img" title="Canyon">
+							</figure>
+							<div class="gallery__desc-wrap">
+
+								<!-- title and autor wrap -->
+								<div class="gallery__info-wrap">
+									<h3 class="gallery__title">мост дьявола</h3>
+								    <span class="gallery__autor">Автор фото: Антон</span>
+								</div><!-- ./title and autor wrap -->
+
+								<!-- like wrap -->
+								<div class="gallery__like-wrap">
+									<label for="button4" class="gallery__checkbox-btn">
+										<input type="checkbox" class="gallery__like-btn" id="button4">
+										<i title="Like" class="fa fa-thumbs-o-up gallery__like-btn-img" aria-hidden="true"></i>
+									</label>
+									<span class="gallery__like-count">254</span>
+								</div><!-- ./like wrap -->
+							</div>
+							<a href="#x" class="gallery__overlay" id="popup4"></a>
+			    	        <div class="gallery__popup">
+								<img src="img/gallery/photo-4-desktop.jpg" alt="Canyon" class="is-image" title="Canyon">
+								<a class="gallery__close" title="Закрыть" href="#close"></a>
+							</div>
+						</a>
+					</li><!-- ./gallery item -->
+				</ul><!-- ./gallery list -->
+
+			</div><!-- ./photo gallery -->
+
+			<!-- second text wrap -->
+			<div class="photo-page__text-wrap photo-page__text-wrap--second">
+				<h2 class="photo-page__title">Всё еще сомневаетесь?</h2>
+				<p class="photo-page__desc">смотрите видео-презентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+			</div><!-- ./second text wrap -->
+
+			<!-- video -->
+			<div class="photo-page__video-wrap">
+				<i class="fa fa-play photo-page__play-btn" aria-hidden="true" id="play-btn"></i>
+				<img title="Play video" src="http://img.youtube.com/vi/p2X4U1mQzoE/maxresdefault.jpg" width="800" height="500" class="photo-page__video-img" alt="video-jpg" id="video">
+			</div><!-- ./video -->
+	</div> <!-- /.maincontent -->
+
+	<!-- footer
+	============================================ -->
+
+	<footer class="footer">
+		<div class="container footer__container">
+        <!-- footer hash -->
+        <div class="footer__hash">
+          <h3 class="footer__hash-title">
+            #visitsedona
+          </h3>
+        </div> <!-- ./footer hash -->
+
+        <!-- footer social -->
+        <div class="footer__social social">
+          <a href="#" class="social__twitter social__icon">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="social__facebook social__icon">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="social__youtube social__icon">
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          </a>
+        </div> <!-- ./footer social -->
+
+        <!-- footer label -->
+        <!-- <div class="footer__label">
+          <span class="footer__label-text">разработано</span>
+          <img src="img/htmlacademy.svg" alt="label htmlacademy">
+        </div> -->
+</div>
+	</footer> <!-- /.footer -->
+
+
+
+
+
+
+
+
+
+<!-- jquery & libs
+============================================ -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="libs/jquery/jquery-3.2.0.min.js"><\/script>')</script>
+
+<!-- script plugin
+============================================ -->
+<script src="js/script.plugin.js"></script>
+
+
+<!-- script modal
+============================================ -->
+<script src="js/modal-video.js"></script>
+<!-- <script src="js/jquery.the-modal.js"></script> -->
+
+<!-- script custom
+============================================ -->
+<!-- <script src="js/scroll.js"></script> -->
+<script src="js/script.custom.js"></script>
+
+</div>
+</body>
+</html>

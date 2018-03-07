@@ -1,0 +1,31 @@
+-
+	var sliderArr = ['./img/slider/slider1.png', './img/slider/slider2.jpg', './img/slider/slider3.jpg']
+-
+	var dotsObj = [
+		{dc: '0', text: '01', role: 'presentation'},
+		{dc: '1', text: '02', role: 'presentation'},
+		{dc: '2', text: '03', role: 'presentation'}
+	]
+
+section.main-slider
+	svg.main-slider__prev-slide(width="57.06" height="110.71" viewBox="0 0 57.06 110.71")
+		polyline(points="56.71 110.36 0.71 55.36 56.71 0.36")
+	ul.main-slider__list.slick-carousel
+		each item in sliderArr
+			li.main-slider__item
+				img.main-slider__img(src=item)
+	svg.main-slider__next-slide(width="57.06" height="110.71" viewBox="0 0 57.06 110.71")
+		polyline(points="0.35 110.36 56.35 55.36 0.35 0.36")
+	ul.slider__dots(role='tablist')
+		each dot in dotsObj
+			if(dot.dc === '0')
+				li.slider__dot.active(data-count=dot.dc role=dot.role)
+					p.slider__dot-text= dot.text
+			else
+				li.slider__dot(data-count=dot.dc role=dot.role)
+					p.slider__dot-text= dot.text
+	a.main-slider__btn.gratia-btn(href='contact.html') book a table
+	a.main-slider__slide-bot(href='#perfection')
+		p.main-slider__slide-text.gratia-descr and perfection is  not a detail
+		svg.main-slider__slide-arrow(width="17" height="44" viewBox="0 0 17 44")
+			polygon(points="16.27 35.07 8.95 42.52 8.95 0 7.95 0 7.95 42.54 0.72 35.19 0 35.92 7.95 44 8.95 44 17 35.81 16.27 35.07")

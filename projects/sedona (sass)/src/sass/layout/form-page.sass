@@ -1,0 +1,137 @@
+@import "adjustments.sass"
+@import "../misc/_mixin.sass"
+
+/**
+ * Global page settings
+
+.form__heading
+	text-align: center
+	font-family: $ptsans
+	color: #000
+	font-weight: 700
+	+rem(21)
+	line-height: 1.238
+	text-transform: uppercase
+	background: #FFF
+	position: relative
+	z-index: 999
+	padding: 0 20px
+	&:before
+		content: ''
+		position: absolute
+		height: 1px
+		width: 97%
+		z-index: -1
+		padding: 0 20px
+		+centerXY
+		background: #EFEFEF
+
+/**
+ * Form
+
+.form
+	padding: 102px 120px
+	display: flex
+	flex-flow: column wrap
+
+.form__emotion-text
+	margin-top: 60px
+	padding: 22px
+	resize: none
+	width: 100%
+	height: 160px
+	border: none
+	background: #EFEFEF
+	font-family: $ptsans
+	color: #000
+	font-weight: 700
+	+rem(18)
+	line-height: 1.444
+
+/* placeholders */
+.form__emotion-text::-webkit-input-placeholder
+	color: #000
+	opacity: 1
+
+.form__emotion-text:-moz-placeholder
+	color: #000
+	opacity: 1
+
+.form__emotion-text::-moz-placeholder
+	color: #000
+	opacity: 1
+
+.form__emotion-text:-ms-input-placeholder
+	color: #000
+	opacity: 1
+
+/** places wrap */
+.form__places-wrap
+	display: flex
+	flex-direction: column
+	width: 100%
+
+.form__places-input-wrap
+	display: flex
+	justify-content: space-between
+	padding: 45px 0
+
+.form__place-checkbox
+	display: none
+	&:not(:first-child)
+		margin-left: auto
+	&:checked + .form__place-name
+		&:before
+			content: '>'
+
+.form__place-name
+	font-family: $ptsans
+	color: #000
+	+rem(18)
+	font-weight: 700
+	line-height: 1.444
+	margin-left: 25px
+	cursor: pointer
+	&:before
+		content: ''
+		display: inline-flex
+		justify-content: center
+		align-items: center
+		width: 56px
+		height: 56px
+		font-size: 2rem
+		font-weight: bold
+		transform: rotate(90deg)
+		margin-right: 25px
+		vertical-align: middle
+		background: #EFEFEF
+
+/** submit wrap */
+.form__submit-wrap
+	display: flex
+	margin-top: 58px
+
+.form__send
+	font-family: $ptsans
+	color: #FFF
+	+rem(21)
+	line-height: 1.238
+	font-weight: 700
+
+	text-align: center
+	border: none
+	background: #80B3D1
+	width: 50%
+	text-transform: uppercase
+
+.form__need-stroke
+	padding: 5px 0
+	font-family: $ptsans
+	color: $maincolor
+	font-weight: 400
+	+rem(14)
+	line-height: 1.875
+	text-transform: uppercase
+	width: 50%
+	text-align: right
+

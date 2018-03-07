@@ -1,0 +1,80 @@
+/**
+ * Footer
+.footer
+	display: flex
+	flex-flow: row nowrap
+	@include mediamax(560px)
+		flex-flow: column nowrap
+
+.footer__contact-us
+	display: flex
+	@include mediamax(560px)
+		margin: 0 auto
+
+.footer__tel-us, .footer__mail-us, .footer__copyright
+	padding-top: 21px
+	padding-bottom: padding-top
+	font-family: $mont
+	color: #333
+	font-weight: 300
+
+.footer__tel-us, .footer__mail-us
+	@include rem(14)
+	text-align: left
+	transition: color .3s ease-in-out
+	will-change: color
+	&:hover
+		color: $maincolor
+	@include mediamax(768px)
+		&:active
+			color: $maincolor
+
+.footer__tel-us
+	padding-right: 21px
+	&:after
+		content: '/'
+		padding-left: 21px
+		color: #c2c2c2
+
+.footer__copyright
+	margin-left: 210px
+	opacity: .5
+	@include rem(12)
+	text-align: right
+	@include mediamax(560px)
+		text-align: center
+		margin: 0 auto
+
+/** social */
+.social__list
+	margin-left: 178px
+	display: flex
+	@include mediamax(560px)
+		margin-top: 15px
+		margin-left: 25%
+
+.social__item
+	border: 1px solid #d6d6d6
+	background-color: rgba(22, 34, 64, 0)
+	width: 60px
+	height: 60px
+	transition: background .3s ease-in-out, border-color .3s ease-in-out
+	&:not(:first-child)
+		border-left: none
+	&:hover
+		background: $maincolor
+		border-color: $maincolor
+	@include mediamax(560px)
+		&:active
+			background: $maincolor
+			border-color: $maincolor
+
+.social__link
+	padding: 21px
+	height: 100%
+	width: 100%
+	color: #333
+	@include rem(18)
+	transition: color .3s ease-in-out
+	&:hover
+		color: #333

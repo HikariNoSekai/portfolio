@@ -1,0 +1,86 @@
+.part-second {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  // DESCRIPTION
+  &__desc-block {
+    color: #fff;
+    width: 33.3%;
+    background: #76b0d4;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 95px 60px 95px;
+    text-transform: uppercase;
+    position: relative;
+
+    @media screen and (max-width: 1023px) {
+      padding: 50px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      padding: 60px 32px 45px;
+    }
+
+  }
+
+  &__trigle {
+    display: none;
+
+    @media screen and (max-width: 430px) {
+      display: block;
+      background: transparent url(../img/white_copy_2.png) center center no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: -30px;
+      left: 0;
+      width: 100%;
+      height: 20%;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1.313rem;
+    font-weight: 700;
+    line-height: 1.238;
+  }
+
+  &__sub-title {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 20px 0 25px 0;
+  }
+
+  &__desc {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  //  IMAGE
+  &__img-block {
+    width: 66.6%;
+    background: #fff url(../img/photo-city@1x.png) center center no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: 1023px) {
+      background-image: url(../img/photo-city@2x.png);
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      height: 260px;
+    }
+  }
+}

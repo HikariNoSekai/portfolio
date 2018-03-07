@@ -1,0 +1,47 @@
+-
+	var prosObj = {
+		title: 'how we reach this?',
+		descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		backside: 'Gratia'
+	}
+-
+	var prosArr = [
+		{
+		title: 'diffrent locations',
+		descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		backside: '4'
+		},
+		{
+		title: 'fresh products',
+		descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		backside: '532'
+		},
+		{
+		title: 'the best form beggining',
+		descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		backside: '16'
+		},
+		{
+		title: 'diffrent locations',
+		descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		backside: '4'
+		},
+		{
+		title: 'fresh products',
+		descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		backside: '532'
+		},
+		{
+		title: 'the best form beggining',
+		descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		backside: '16'
+		}
+	]
+section.pros
+	include ../heading/heading
+	+heading(prosObj)
+	ul.pros__list
+		each item in prosArr
+			li.pros__item
+				+heading(item)
+	include ../backToTop/scroll

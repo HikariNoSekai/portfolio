@@ -1,0 +1,12 @@
+if selected === 'About'
+	header.main-header.main-header--about
+		include ../logo/logo
+		button.menu-btn.menu-btn--about#js-menu-btn
+			i.fas.fa-bars
+		include ../nav/nav
+else
+	header.main-header.main-header--menu
+		include ../logo/logo
+		button.menu-btn#js-menu-btn
+			i.fas.fa-bars
+		include ../nav/nav

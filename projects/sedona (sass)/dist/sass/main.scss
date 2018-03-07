@@ -1,0 +1,44 @@
+//  LIBS SCSS
+@import "libs.scss";
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  top: 56px;
+  -webkit-transition: .5s;
+  transition: .5s;
+
+  @media screen and (max-width: 767px) {
+    top: 300px;
+  }
+
+  &--close {
+    top:50px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+//  HEADER
+@import "layout/header.scss";
+
+//  MAINCONTENT
+@import "layout/maincontent.scss";
+
+//  FOOTER
+@import "layout/footer.scss";
+
+//  FORM
+@import "./layout/form/form.scss";

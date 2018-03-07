@@ -1,0 +1,17 @@
+extends ../template.pug
+block title
+block content
+	main.maincontent
+		.preview
+			h1.preview__title
+				| We make 
+				span.preview__title-color
+					| web 
+				| better.
+			a.arrow.js-scroll(href='#about')
+				include ../components/anim/arrow
+
+		include ../components/about/about
+		include ../components/portfolio/portfolio
+		include ../components/mobile/mobile
+		include ../components/social/social

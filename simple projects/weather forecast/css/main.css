@@ -1,0 +1,158 @@
+/****
+	Adjusment settings	
+****/
+
+*{
+	box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+	margin-bottom: 0;
+}
+
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
+.body{
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+
+.cities{
+	background: #3399CC;
+	border: 16px solid #2B81AC;
+}
+
+.container{
+	max-width: 700px;
+	height: 507px;
+	margin: 216px auto;
+}
+
+.title__text{
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.wi-sunrise{
+	padding-left: 15px;
+}
+
+.end__text{
+	font-size: 20px;
+	color: white;
+}
+
+/****
+	cities
+****/
+
+.cities__list{
+	display: inline-block;
+	max-width: 700px;
+	list-style: none;
+	padding: 0;
+	font-size: 0;
+	color: white;
+	
+}
+
+.cities__item{
+	display: inline-block;
+	text-align: center;	
+	line-height: 20px;
+}
+
+.cities__list:hover .cities__item{
+	opacity: .3;
+}
+
+.cities__list .cities__item:hover{
+	opacity: 1;
+}
+
+
+.cities__lisbon{
+	width: 50%;
+	border: 2px solid white;
+	background: #3399CC;
+}
+
+.cities__paris{
+	width: 25%;
+	border: 2px solid white;
+	background: #33CCCC;
+}
+
+.cities__belgrade{
+	width: 25%;
+	border: 2px solid white;
+	background: #996699;
+}
+
+.cities__moscow{
+	width: 25%;
+	border: 2px solid white;
+	background: #C24747;
+}
+
+.cities__telaviv{
+	width: 25%;
+	border: 2px solid white;
+	background: #E2674A;
+}
+
+.cities__cair{
+	width: 25%;
+	border: 2px solid white;
+	background: #FFCC66;
+}
+
+.cities__newyork{
+	width: 25%;
+	border: 2px solid white;
+	background: #99CC99;
+}
+
+.cities__newdelhi{
+	width: 25%;
+	border: 2px solid white;
+	background: #669999;
+}
+
+.cities__sanfrancisco{
+	width: 50%;
+	border: 2px solid white;
+	background: #CC6699;
+}
+
+.cities__tokyo{
+	width: 25%;
+	border: 2px solid white;
+	background: #339966;
+}
+
+.cities__sydney{
+	width: 100%;
+	border: 2px solid white;
+	background: #666699;
+} 
+
+.cities__city-title{
+	font-size: 24px;
+}
+
+.cities__city-temperature{
+	font-size: 20px;
+	padding-bottom: 30px;
+}
+
+.wi-celsius{
+	vertical-align: middle;
+	font-size: 34px;
+	padding-right: 10px;
+}

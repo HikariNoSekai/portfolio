@@ -1,0 +1,33 @@
+-
+	var dishesTitle = {
+		title: 'perfection',
+		descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		backside: 'Gratia'
+	}
+-
+	var dishesArr = [
+		{
+			title: 'desserts',
+			img: 'img/desserts.jpeg',
+			descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+		},
+		{
+			title: 'smoothies',
+			img: 'img/smoothies.jpeg',
+			descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+		},
+		{
+			title: 'breakfast',
+			img: 'img/breakfast.jpeg',
+			descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+		}
+	]
+section.dishes#perfection
+	include ../heading/heading
+	+heading(dishesTitle)
+	include subcomponents/dishcard
+	ul.dishes__list
+		each dish in dishesArr
+			li.dishes__item
+				+dishcard(dish)
+	button.dishes__more-btn#more-dishes check other offers

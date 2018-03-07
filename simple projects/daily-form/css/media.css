@@ -1,0 +1,33 @@
+@media screen and (max-width: 1040px){
+	.daily-form__field--fn{
+		width: 100%;
+	}
+
+	.daily-form__field--ln{
+		width: 100%;
+	}
+}	
+
+
+@media screen and (max-width: 801px){
+	
+	.daily-form__title-text{
+		font-size: 1.125rem;
+	}
+	
+	.daily-form__title-desc{
+		font-size: 0.75rem;
+	}
+
+	.daily-form__field{
+		font-size: 0.75rem;
+	}
+
+	.daily-form__submit-btn{
+		font-size: 0.865rem;
+	}
+
+	.daily-form__submit-terms{
+		font-size: 0.625rem;
+	}
+}

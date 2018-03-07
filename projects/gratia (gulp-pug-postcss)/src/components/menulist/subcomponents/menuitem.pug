@@ -1,0 +1,32 @@
+-
+	var menuTitle = {
+		title: 'menu',
+		descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		backside: 'Gratia'
+	}
+-
+	var hamburger = {
+		img: 'img/menu/cards/gamburger.jpeg',
+		title: 'Chicken burger',
+		descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		compdescr: 'chicken breast fillet, marinated overnight accompained with tomato cos lettuce & Spanish red onion',
+		price: '5$'
+	}
+section.hamburger
+	include ../../heading/heading
+	+heading(menuTitle)
+	ul.hamburger-wrap
+		li.hamburger__img-wrap
+			img.hamburger__img(src=hamburger.img alt=hamburger.title title=hamburger.title)
+		li.hamburger__text-wrap
+			.hamburger__title-wrap
+				h3.hamburger__title.gratia-heading= hamburger.title
+				.hamburger__line
+				p.hamburger__descr.gratia-descr= hamburger.descr
+			.hamburger__comp-wrap
+				p.hamburger__comp-title.gratia-heading Components
+				p.hamburger__comp-descr.gratia-heading= hamburger.compdescr
+			.hamburger__price-wrapp
+				p.hamburger__price.gratia-heading= hamburger.price
+				p.hamburger__total.gratia-descr Total cost
+

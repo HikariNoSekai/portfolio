@@ -1,0 +1,15 @@
+-
+    var items = [
+        { title: 'About', link: 'index.html' },
+        { title: 'Menu', link: 'menu.html' },
+        { title: 'Contact', link: 'contact.html' }
+    ]
+
+nav.nav#js-nav
+    ul.nav__list
+        each item in items
+            li.nav__item
+                if selected === item.title
+                    a.nav__link.current(href=item.link)= item.title
+                else
+                    a.nav__link(href=item.link)= item.title

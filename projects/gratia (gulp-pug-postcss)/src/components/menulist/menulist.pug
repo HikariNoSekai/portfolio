@@ -1,0 +1,53 @@
+-
+	var menuTitle = {
+		title: 'menu',
+		descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		backside: 'Gratia'
+	}
+-
+	var menuArr = [
+		{
+			img: 'img/menu/main-dishes.jpeg',
+			title: 'main dishes',
+			descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			link: '#'
+		},
+		{
+			img: 'img/menu/soups.jpeg',
+			title: 'soups',
+			descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			link: '#'
+		},
+		{
+			img: 'img/menu/hamburgers.jpeg',
+			title: 'hamburgers',
+			descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			link: 'hamburger.html'
+		},
+		{
+			img: 'img/menu/desserts.jpeg',
+			title: 'desserts',
+			descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			link: '#'
+		},
+		{
+			img: 'img/menu/barbecue.jpeg',
+			title: 'barbecue',
+			descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			link: '#'
+		},
+		{
+			img: 'img/menu/salads.jpeg',
+			title: 'salads',
+			descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			link: '#'
+		}
+	]
+section.menu
+	include ../heading/heading
+	+heading(menuTitle)
+	include ./subcomponents/menucard
+	ul.menu__list
+		each card in menuArr
+			li.menu__item
+				+menucard(card)

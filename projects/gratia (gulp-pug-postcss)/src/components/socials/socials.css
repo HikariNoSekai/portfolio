@@ -1,0 +1,33 @@
+.socials {
+	margin-top: 16px;
+	padding-top: 11px;
+	border-top: 1px solid #e6e6e6;
+	@media(--large) {
+		margin-top: 36px;
+		padding-top: 31px;
+	}
+}
+
+.socials__list {
+	display: flex;
+}
+
+.socials__item {
+	margin-left: 17px;
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.socials__link {
+	@add-mixin center;
+	@add-mixin fontSize 14;
+	size: 26px;
+	border-radius: 50%;
+	background: #E6E6E6;
+	color: #FFF;
+	transition: background .3s ease-in-out;
+	&:hover, &:active {
+		background: var(--accent-color);
+	}
+}

@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: lightblue;
+}
+
+.input-wrapper {
+	width: 250px;
+	margin: 100px auto;
+	position: relative;
+}
+
+.form__item--text-field {
+	display: block;
+	width: 100%;
+	background: #fff;
+	border-radius: 5px;
+	border: none;
+	padding: 10px 35px 10px 35px; 
+	font-size: 16px;
+}
+
+.form__item--email-icon {
+	position: absolute;
+	font-size: 1rem;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	color: lightblue;
+}
+
+.form__item--subscribe {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	height: 100%;
+	background: none;
+	border: none;
+	padding: 0 5px;
+	cursor: pointer;
+	color: lightblue;
+	transition: all .2s ease-in;
+}
+
+.form__item--subscribe:hover {
+	background: lightblue;
+	color: #fff;
+}
+
+.form__item--text-field::-webkit-input-placeholder {
+	color: rgba(0, 0, 0, .2);
+	font-size: 16px;
+	opacity: 1;
+}
+
+.form__item--text-field:-moz-placeholder {
+	color: rgba(0, 0, 0, .2);
+	opacity: 1;
+	font-size: 16px;
+}
+
+.form__item--text-field::-moz-placeholder {
+	color: rgba(0, 0, 0, .2);
+	opacity: 1;
+	font-size: 16px;
+}
+
+.form__item--text-field:-ms-input-placeholder {
+	color: rgba(0, 0, 0, .2);
+	opacity: 1;
+	font-size: 16px;
+}

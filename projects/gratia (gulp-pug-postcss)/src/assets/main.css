@@ -1,0 +1,39 @@
+@import "_mixin.css";
+@import "libs.css";
+@import "fonts.css";
+@import "adjustment.css";
+
+/*
+    Components
+*/
+
+@import "../components/header/header.css";
+@import "../components/logo/logo.css";
+@import "../components/nav/nav.css";
+@import "../components/heading/heading.css";
+@import "../components/main-slider/main-slider.css";
+@import "../components/dishes/subcomponents/dish.css";
+@import "../components/dishes/dishes.css";
+@import "../components/details/details.css";
+@import "../components/pros/pros.css";
+@import "../components/footer/footer.css";
+@import "../components/socials/socials.css";
+@import "../components/backToTop/scroll.css";
+
+/*
+    Pages
+*/
+
+/**
+ * Menu page
+ */
+
+@import "../components/menulist/menulist.css";
+@import "../components/menulist/subcomponents/menucard.css";
+@import "../components/menulist/subcomponents/menuitem.css";
+
+/**
+ * Contact page
+ */
+
+@import "../components/contact/contact.css";

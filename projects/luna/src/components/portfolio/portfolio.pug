@@ -1,0 +1,24 @@
+-
+    var portfolioItems = [
+        {img: './img/work1.png', title: 'beautiful DESIGN', descr: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore'},
+        {img: './img/work2.png', title: 'BEST DEVELOPMENT', descr: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore'},
+        {img: './img/work3.png', title: 'WEB PROMOTE', descr: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore'}
+    ]
+
+
+section.portfolio#portfolio
+    .container(class='portfolio__container')
+        h1.portfolio__title What we do
+        ul.portfolio__list
+            each item in portfolioItems
+                li.portfolio__item
+                    .portfolio__img-wrap
+                        img.portfolio__item-img(src=item.img)
+                    .portfolio__item-title-wrap
+                        h3.portfolio__item-title= item.title
+                    .portfolio__descr-wrap 
+                        p.portfolio__descr= item.descr
+
+        p.portfolio__show
+            button.portsolio__show-link
+                | show more 

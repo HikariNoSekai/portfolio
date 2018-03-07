@@ -1,0 +1,23 @@
+@import "_mixin.css";
+@import "libs.css";
+@import "fonts.css";
+@import "adjustment.css";
+
+/* 
+    Components
+*/
+
+@import "../components/header/header.css";
+@import "../components/footer/footer.css";
+@import "../components/maincontent/preview.css";
+@import "../components/about/about.css";
+@import "../components/portfolio/portfolio.css";
+@import "../components/mobile/mobile.css";
+@import "../components/social/social.css";
+@import "../components/modal/modal.css";
+@import "../components/anim/arrow.css";
+@import "../components/backToTop/scroll.css";
+
+/*
+    Pages
+*/

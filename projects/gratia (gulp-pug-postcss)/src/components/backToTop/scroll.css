@@ -1,0 +1,38 @@
+.back_to_top {
+    position: fixed;
+    right: -100px;
+    transition: right .2s ease-in-out;
+    bottom: 55px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    size: 35px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #0D1423;
+    z-index: 9999;
+    transition: background .1s ease-in-out;
+    will-change: background;
+    &:active {
+        background: var(--accent-color);
+    }
+    @media(--small) {
+        size: 40px;
+    }
+    @media (--medium) {
+        size: 50px;
+        &:hover {
+            background: var(--accent-color);
+        }
+    }
+}
+
+.back_to_top--active {
+    right: 20px;
+    @media (--medium) {
+        right: 15px;
+    }
+}

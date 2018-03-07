@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400i|Montserrat:700');
+
+@font-face {
+	font-family: "Montserrat-bold";
+	src: url("../fonts/Montserrat/Montserrat-Bold.eot?") format("eot"),
+	url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff"),
+	url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype"),
+	url("../fonts/Montserrat/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "CrimsonText-itallic";
+	src: url("../fonts/CrimsonText/CrimsonText-Italic.eot?") format("eot"),
+	url("../fonts/CrimsonText/CrimsonText-Italic.woff") format("woff"),
+	url("../fonts/CrimsonText/CrimsonText-Italic.ttf") format("truetype"),
+	url("../fonts/CrimsonText/CrimsonText-Italic.svg#CrimsonText-Italic") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Selima';
+	src: local('Selima'),
+	url("../fonts/Selima/selima.otf") format("opentype"),
+	url("../fonts/Selima/Selima.ttf") format("truetype"),
+	url('../fonts/Selima/Selima.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+

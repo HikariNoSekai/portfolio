@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57.06" height="110.71" viewBox="0 0 57.06 110.71">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <title>Ресурс 1</title>
+  <polyline class="a" points="0.35 110.36 56.35 55.36 0.35 0.36"/>
+</svg>

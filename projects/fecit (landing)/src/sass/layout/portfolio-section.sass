@@ -1,0 +1,308 @@
+/**
+ * Portfolio
+
+.portfolio-section
+  padding-top: 50px
+  padding-bottom: 150px
+  background: #fff
+  @include mediamax(1168px)
+  	padding-top: 25px
+
+.portfolio__tesis
+	@include mediamax(1168px)
+		text-align: center
+
+.portfolio__heading
+	margin-top: 30px
+	@include mediamax(1168px)
+		margin-top: 15px
+		margin-bottom: 20px
+		text-align: center
+
+
+/** portfolio list */
+
+.portfolio__list
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	margin-top: 45px
+	@include mediamax(1200px)
+		justify-content: center
+	@include mediamax(996px)
+		margin-top: 10px
+
+.portfolio__item
+	position: relative
+	overflow: hidden
+	max-width: 570px
+	margin-top: 26px
+	&:first-child, &:nth-child(2)
+		margin-top: 0
+		@include mediamax(996px)
+			margin-top: 20px
+	@include mediamax(1200px)
+		margin-top: 20px
+		max-width: 500px
+		&:nth-child(2n)
+			margin-left: 20px
+			@include mediamax(996px)
+				margin-left: 0
+	@include mediamax(1095px)
+		max-width: 450px
+	@include mediamax(996px)
+		max-width: 570px
+	@include mediamax(400px)
+		height: 250px
+
+.portfolio__link
+	position: relative
+	display: block
+	font-size: 0
+	color: #fff
+	&:hover .portfolio__desc-wrap
+		background: rgba(31, 31, 31, .5)
+	&:hover .portfolio__desc-heading
+		bottom: 72px
+		@include mediamax(576px)
+			bottom: 62px
+		&:after
+			width: 70px
+	&:hover .portfolio__desc
+		bottom: 39px
+		@include media(576px)
+			bottom: 28px
+		@include media(400px)
+			bottom: 15px
+	&:hover .portfolio__hover-element
+		animation: hoverAnimation .5s forwards
+
+.programs__img-wrap
+	position: absolute
+	left: 0
+	top: 0
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: rgba(0, 0, 0, .3)
+
+.portfolio__img
+	height: 380px
+	@include mediamax(1200px)
+		width: 100%
+
+	@include mediamax(400px)
+		width: auto
+		height: 250px
+
+.portfolio__desc-wrap
+	position: absolute
+	left: 0
+	bottom: 0
+	width: 100%
+	height: 100%
+	padding: 20px
+	background: rgba(31, 31, 31, 0)
+	transition: background .3s
+	will-change: background
+	@include mediamax(996px)
+		background: rgba(31, 31, 31, .5)
+
+.portfolio__desc-heading, .portfolio__desc
+	font-family: $mont
+	color: #FFF
+
+.portfolio__desc-heading
+	position: absolute
+	left: 43px
+	bottom: 24px
+	z-index: 999
+	padding-bottom: 15px
+	transition: bottom .3s
+	will-change: bottom
+	//
+	@include rem(28)
+	font-weight: 700
+	text-align: left
+	@include mediamax(996px)
+		bottom: 72px
+	@include mediamax(576px)
+		@include rem(24)
+		left: 23px
+		bottom: 62px
+	&:after
+		content: ''
+		display: block
+		width: 0
+		height: 2px
+		background: $maincolor
+		position: absolute
+		bottom: 0
+		left: 0
+		transition: width .4s
+		will-change: width
+		@include mediamax(996px)
+			width: 70px
+
+.portfolio__desc
+	@include rem(14)
+	font-weight: 400
+	line-height: 2
+	position: absolute
+	left: 43px
+	bottom: -28px
+	transition: bottom .3s
+	will-change: bottom
+	@include mediamax(996px)
+		bottom: 39px
+	@include mediamax(576px)
+		left: 23px
+		bottom: 28px
+	@include mediamax(400px)
+		bottom: 15px
+		max-width: 270px
+		line-height: 1.4
+
+.portfolio__hover-element
+	position: absolute
+	right: 15px
+	top: -30px
+	cursor: pointer
+	z-index: 999
+	color: #fff
+	@include rem(18)
+
+@keyframes hoverAnimation
+	0%
+		top: -30px
+	50%
+		top: 35px
+	100%
+		top: 15px
+
+/**
+ * Modal img
+ */
+
+/** затемнение */
+.portfolio__overlay
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 9999
+	visibility: hidden
+	/*фон затемнения*/
+	background-color: rgba(0, 0, 0, 0.7)
+	opacity: 0
+	position: fixed
+	cursor: default
+	transition: all .6s
+	will-change: all
+	&:target
+		visibility: visible
+		opacity: 1
+	&:target + .portfolio__popup
+		top: 50%
+		transform: translate(-50%, -50%)
+
+/** Модальное окно */
+
+.portfolio__popup
+	top: 0
+	right: 0
+	left: 50%
+	z-index: 10000
+	margin: 0 auto
+	width: 100%
+	min-width: 320px
+	max-width: 920px
+	/* фиксированное позиционирование, окно стабильно при прокрутке */
+	position: fixed
+	border: 1px solid #383838
+	/* скругление углов */
+	border-radius: 4px
+	background-color: #FFFFFF
+	/* внешняя тень */
+	box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3)
+	/* трансформация */
+	transform: translate(-50%, -150%)
+	/* анимируем трансформацию */
+	transition: transform 0.6s ease-out
+	will-change: transform
+	img
+		display: block
+		border: none
+		width: 100%
+		height: auto
+	@media only screen and (min-width: 768px) and (max-width: 959px)
+		width: 95%
+	@media only screen and (min-width: 320px) and (max-width: 767px)
+		width: 85%
+
+/** крестик для модального окна */
+
+.portfolio__close
+	position: absolute
+	padding: 0
+	top: -10px
+	right: -10px
+	width: 25px
+	height: 25px
+	border: 2px solid #ccc
+	border-radius: 50%
+	background-color: rgba(61, 61, 61, .9)
+	box-shadow: 0px 0px 10px #000
+	text-align: center
+	text-decoration: none
+	font-weight: bold
+	line-height: 20px
+	transition: background-color ease .7s
+	will-change: background-color
+	&:before
+		position: absolute
+		@include centerXY
+		color: rgba(255, 255, 255, 0.9)
+		content: '\2715'
+		text-shadow: 0 -1px rgba(0, 0, 0, 0.9)
+		font-size: 0.785rem
+	&:hover
+		background-color: rgba(252, 20, 0, 0.8)
+
+/** Load more btn */
+
+.load-more-btn
+  position: absolute
+  bottom: -95px
+  transition: background 0.3s ease-in-out
+  padding: 0
+  pointer-events: none
+  cursor: default
+  opacity: 0
+  will-change: background, opacity
+  @include medsize(medium)
+    opacity: 1
+    pointer-events: auto
+    cursor: pointer
+    &:hover > .load-more-btn__arrow
+      opacity: 1
+    &:hover > .load-more-btn_text
+      color: rgba(51, 51, 51, 1)
+    .load-more-btn__arrow
+      transform: rotate(90deg)
+      padding-top: 10px
+      opacity: .25
+      transition: opacity .3s ease-in-out
+      will-change: opacity
+    .load-more-btn_text
+      color: rgba(51, 51, 51, .25)
+      text-transform: uppercase
+      font-family: $oswald
+      @include rem(13)
+      font-weight: 700
+      transition: color .3s ease-in-out
+      will-change: color

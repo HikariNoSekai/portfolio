@@ -1,0 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.origin {
+    transform-origin: 50% 50%;
+}

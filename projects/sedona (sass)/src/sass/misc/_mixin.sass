@@ -1,0 +1,40 @@
+$mainfont: 16
+$maincolor: #333
+$ptsans: 'PT Sans', sans-serif
+
+@mixin nullpm
+	padding: 0
+	margin: 0
+
+@mixin centerY
+	top: 50%
+	transform: translateY(-50%)
+
+@mixin centerX
+	left: 50%
+	transform: translateX(-50%)
+
+@mixin centerXY
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+
+@mixin rem($fontsize)
+	font-size: $fontsize/$mainfont +rem
+	line-height: (($fontsize+2)/$mainfont) +rem
+
+@mixin medium
+	@media(min-width:992px)
+		@content
+
+@mixin low
+	@media(min-width:768px)
+		@content
+
+@mixin media($size)
+	@media(min-width:$size)
+		@content
+
+@mixin mediamax($size)
+	@media(max-width:$size)
+		@content

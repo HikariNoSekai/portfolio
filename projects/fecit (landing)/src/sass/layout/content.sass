@@ -1,0 +1,203 @@
+/**
+.services-section
+  padding-top: 250px
+  padding-bottom: 250px
+
+/**
+ * Tesis with image background
+
+.tesis__img-wrap
+	background: url('../img/clients-bg.jpg') no-repeat center top fixed
+	background-size: cover
+	height: 100vh
+
+
+/**
+ * Clients section
+.clients-section
+	background: #FFF
+	border-bottom: 1px solid #EDEDED
+
+.clients__says-wrap
+	position: relative
+	width: 45%
+	margin: 0 auto
+	padding: 30px 0 82px 0
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	@include medsize(medium)
+		padding: 100px 0 152px 0
+
+.clients__says-heading
+	@include rem(11)
+	@include medsize(medium)
+		@include rem(14)
+
+.clients__list
+	margin-top: 20px
+	@include medsize(medium)
+		margin-top: 50px
+
+.clients__desc
+	@include rem(18)
+	line-height: 1.429
+	font-weight: 500
+	@include medsize(medium)
+		@include rem(28)
+
+.clients__autor
+	@include rem(11)
+	margin-top: 20px
+	position: relative
+	padding-bottom: 18px
+	@include medsize(medium)
+		@include rem(14)
+		margin-top: 40px
+	&:before
+		content: ''
+		position: absolute
+		left: 50%
+		bottom: 0
+		transform: translateX(-50%)
+		height: 2px
+		width: 70px
+		background: $maincolor
+
+/**
+ * clients nav
+
+.clients-nav
+  position: absolute
+  bottom: 30px
+  width: 100%
+  // right: 25%
+  margin: 0 auto
+  .clients-nav__list
+    margin: 0
+  .clients-nav__item
+    display: inline-block
+    margin-left: 15px
+    &:first-child
+      margin-left: 0
+  .clients__arrow
+    cursor: pointer
+  .clients__arrow--left
+    transform: rotate(180deg)
+  .clients__arrow--nolist
+    opacity: .5
+  .clients-nav__count
+  	font-family: 'Montserrat', Helvetica, Arial, sans-serif
+  	@include rem(11)
+  	font-weight: 400
+  	line-height: 2.143
+		color: #333
+		@include medsize(medium)
+			@include rem(14)
+  @include medsize(medium)
+    // right: 42.5%
+    margin: 0 auto
+    bottom: 62px
+
+/**
+ * Clients companies
+
+.clients-companies-wrap
+	background: #FFF
+	padding-top: 90px
+	padding-bottom: 90px
+
+.clients-companies__list
+	display: flex
+	flex-flow: row nowrap
+	justify-content: space-between
+
+/**
+ * Contact section
+
+.contact-section
+	background: #FFF
+	color: #000
+	padding-bottom: 100px
+
+
+#map
+	// position: relative
+	width: 100%
+	height: 350px
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		// background: rgba(92, 241, 190, .8)
+		// z-index: 999
+
+.contact-text-wrap
+	width: 45%
+	margin: 0 auto
+	padding-top: 100px
+	padding-bottom: 95px
+
+.contact__heading
+	margin-top: 32px
+
+.contact__desc
+	margin-top: 46px
+	@include rem(22)
+	line-height: 1.545
+	font-weight: 400
+
+/**
+ * Footer
+.footer
+	display: flex
+
+.footer__contacts, .footer__copyright
+	padding: 21px
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif
+	color: #333
+	font-weight: 300
+
+.footer__contacts
+	@include rem(14)
+	text-align: left
+	.footer__link
+	span
+		color: #c2c2c2
+
+.footer__copyright
+	margin-left: 210px
+	opacity: .5
+	@include rem(12)
+	text-align: right
+
+/** social */
+.social__list
+	margin-left: 178px
+	display: flex
+
+.social__item
+	border: 1px solid #d6d6d6
+	background-color: rgba(22, 34, 64, 0)
+	width: 60px
+	height: 60px
+	transition: background .3s ease-in-out, border-color .3s ease-in-out
+	&:not(:first-child)
+		border-left: none
+	&:hover
+		background: $maincolor
+		border-color: $maincolor
+
+.social__link
+	padding: 21px
+	height: 100%
+	width: 100%
+	color: #333
+	@include rem(18)
+	transition: color .3s ease-in-out
+	&:hover
+		color: #333

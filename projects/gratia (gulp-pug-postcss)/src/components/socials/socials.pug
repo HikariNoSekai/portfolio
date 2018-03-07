@@ -1,0 +1,12 @@
+-
+	var socialArr = [
+		{icon: 'fab fa-facebook-f', link: 'https://www.facebook.com/gratiacafe/'},
+		{icon: 'fab fa-twitter', link: 'https://twitter.com/gratiacafe/'},
+		{icon: 'fab fa-instagram', link: 'https://www.instagram.com/gratiacafe/'}
+	]
+adress.socials
+	ul.socials__list
+		each item in socialArr
+			li.socials__item
+				a.socials__link(href=item.link target="_blank")
+					i(class=item.icon)

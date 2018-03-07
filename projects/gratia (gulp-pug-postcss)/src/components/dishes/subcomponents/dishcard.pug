@@ -1,0 +1,9 @@
+mixin dishcard(obj)
+	figure.dishcard__img-wrap
+		img.dishcard__img(src=obj.img alt=obj.title title=obj.title)
+		figcaption
+			.dishcard__text-wrap
+				h3.dishcard__title.gratia-heading= obj.title
+				.dishcard__line
+				p.dishcard__descr.gratia-descr= obj.descr
+			a.dischcard__link(href=obj.img target='_blank')

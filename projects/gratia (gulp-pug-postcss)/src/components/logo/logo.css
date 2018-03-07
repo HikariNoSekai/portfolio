@@ -1,0 +1,32 @@
+.logo__link {
+	@add-mixin center;
+	cursor: pointer;
+}
+
+.logo__img {
+	size: 24px;
+	@media(--small) {
+		size: 30px;
+	}
+	@media(--medium) {
+		size: 34px;
+	}
+}
+
+.logo__title {
+	font-family: $mont;
+	margin-left: 10px;
+	@add-mixin fontSize 16;
+	@add-mixin remLh 24;
+	text-align: left;
+	@media(--small) {
+		margin-left: 10px;
+		@add-mixin fontSize 18;
+		@add-mixin remLh 24;
+	}
+	@media(--medium) {
+		margin-left: 16px;
+		@add-mixin fontSize 24;
+		@add-mixin remLh 36;
+	}
+}
