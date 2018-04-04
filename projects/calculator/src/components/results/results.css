@@ -1,0 +1,82 @@
+.result__block {
+	width: var(--large-container);
+	margin: 0 auto;
+	display: none;
+}
+
+.resuls__heading {
+	margin-top: 0;
+}
+
+.region__select {
+	margin-bottom: 50px;
+	padding: 24px;
+	width: 310px;
+	outline: none;
+}
+
+.total-wrapper {
+	margin-bottom: 50px;
+	width: 467px;
+}
+
+.reward-tiers, .add-ons {
+	padding: 15px 0;
+	border-bottom: 1px solid #cfcfcf;
+}
+
+.reward-tiers__heading, .add-ons__heading {
+	font-family: $calibri;
+	color: #000;
+	@add-mixin fontSize 20;
+	font-weight: 700;
+	@add-mixin remLh 30;
+}
+
+.results {
+	padding-top: 15px;
+	display: none;
+}
+
+.reward-tiers__items, .add-ons__item, .total__weight, .amount__pledge, .shipping__fee, .total__pledge, .delivery{
+	font-family: $calibri;
+	color: #000;
+	@add-mixin fontSize 20;
+	font-weight: 400;
+	@add-mixin remLh 30;
+}
+
+.weight, .pledge, .fee, .delivery--date{
+	margin-left: auto;
+	font-family: $calibri;
+	color: #000;
+	@add-mixin fontSize 20;
+	font-weight: 700;
+	@add-mixin remLh 30;
+	text-align: right;
+}
+
+.weight-wrap, .pledge-wrap, .fee-wrap, .summ-wrap, .delivery-wrap{
+	display: flex;
+}
+
+.weight-wrap {
+	display: none;
+}
+
+.summ-wrap {
+	margin-top: 50px;
+}
+
+.total__pledge, .summary {
+	display: flex;
+	font-family: $calibri;
+	color: #2FC139;
+	@add-mixin fontSize 24;
+	font-weight: 700;
+	@add-mixin remLh 30;
+}
+
+.summary {
+	margin-left: auto;
+}

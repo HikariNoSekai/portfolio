@@ -1,0 +1,21 @@
+.main-header {
+	padding: 25px 0;
+	background: rgb(246, 246, 246);
+}
+
+.title-wrapper {
+	width: var(--large-container);
+	margin: 0 auto;
+	@add-mixin center;
+	flex-flow: column nowrap;
+}
+
+.title {
+	margin-top: 15px;
+	font-family: $calibri;
+	color: #707070;
+	@add-mixin fontSize 22;
+	font-weight: 400;
+	@add-mixin remLh 22;
+}
+

@@ -1,0 +1,91 @@
+:root {
+  --body-color: #fff;
+  --basic-font: 16px, sans-serif;
+  --accent-color: #2ecc71;
+}
+
+$calibri: 'Calibri', 'Arial' , sans-serif;
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font: var(--basic-font);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  padding: 0;
+  background: var(--body-color);
+}
+
+.maincontent {
+  flex: 1 0;
+}
+
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.flex-container {
+  display: flex;
+}
+
+/**
+ *
+ * Global settings
+ *
+ */
+
+.addons {
+  display: none;
+}
+
+.item__add {
+  position: absolute;
+  left: 0;
+  top: -15px;
+  opacity: 0;
+}
+
+.item__img{
+  size: 80px 80px;
+}
+
+.item__title{
+  font-family: $calibri;
+  @add-mixin fontSize 16;
+  font-weight: 400;
+  @add-mixin remLh 20px;
+}
+
+.ugears-heading {
+  font-family: $calibri;
+  color: #000;
+  @add-mixin fontSize 30;
+  font-weight: 700;
+  @add-mixin remLh 22px;
+  margin: 50px 0;
+}
+
+
+/* for modal */

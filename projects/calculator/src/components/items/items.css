@@ -1,0 +1,134 @@
+.main__items {
+	width: var(--large-container);
+	margin: 0 auto;
+	position: relative;
+	z-index: 99;
+}
+
+.items-wrap {
+	display: flex;
+	flex-flow: row wrap;
+	/*justify-content: space-around;*/
+}
+
+.itembox {
+	size: 250px 150px;
+	position: relative;
+	@add-mixin center;
+	flex-flow: column nowrap;
+	text-align: center;
+	border: 1px solid #e8e8e8;
+	margin-bottom: 50px;
+	margin-right: 50px;
+	cursor: pointer;
+	opacity: 1;
+	&:hover .tooltip, &:hover .zoom-in{
+		animation: leftToRight 1s forwards;
+	}
+	&:hover .tooltip.rightPos, &:hover .zoom-in.rightPos{
+		animation: none;
+	}
+}
+
+.rightPos {
+	left: 15px;
+}
+
+.item__title {
+	width: 65%;
+}
+
+.item__checked {
+	position: absolute;
+	size: 15px;
+	color: var(--accent-color);
+	top: -8px;
+	right: -8px;
+	display: none;
+	background: #FFF;
+}
+
+.itembox--active{
+	border: 2px solid var(--accent-color);
+}
+
+.itembox--inactive {
+	opacity: .4;
+}
+
+/**
+ * tooltip
+ */
+
+/* Tooltip container */
+.tooltip {
+    position: absolute;
+    left: -30px;
+    top: 40px;
+    opacity: 0;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 280px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 3px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -140px;
+    /* */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/** top arrow */
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/**  end */
+
+.zoom-in {
+	position: absolute;
+	top: 15px;
+	left: -30px;
+	opacity: 0;
+}
+
+.zoom-in, .tooltip-img {
+	color: #ccc;
+}
+
+@keyframes leftToRight {
+	0%{
+		left: -30px;
+	}
+	50%{
+		left: 20px;
+		opacity: .75;
+	}
+	100%{
+		left: 15px;
+		opacity: 1;
+	}
+}

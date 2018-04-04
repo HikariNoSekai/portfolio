@@ -1,0 +1,32 @@
+-
+	var addons = [
+		{id: '25', title: 'Horse-Mechanoid', price:'39', weight: '1.33', src: './img/Add/Add_01.jpg'},
+		{id: '26', title: 'Archballista-Tower Model', price:'35', weight: '1.16', src: './img/Add/Add_02.jpg'},
+		{id: '27', title: 'Stagecoach Model', price:'35', weight: '1.16', src: './img/Add/Add_03.jpg'},
+		{id: '28', title: 'Aviator Model', price:'54', weight: '1.85', src: './img/Add/Add_04.jpg'},
+		{id: '29', title: 'Roadster Model', price:'44', weight: '1.41', src: './img/Add/Add_05.jpg'},
+		{id: '30', title: 'Bike Model', price:'19', weight: '0.68', src: './img/Add/Add_06.jpg'},
+		{id: '31', title: 'Secret Model', price:'35', weight: '1.33', src: './img/Add/Add_07.jpg'},
+		{id: '32', title: 'Tower Windmill Model', price:'54', weight: '1.75', src: './img/Add/Add_08.jpg'},
+		{id: '33', title: 'V-Express Steam Train', price:'54', weight: '1.64', src: './img/Add/Add_09.jpg'},
+		{id: '34', title: 'Heavy Boy Truck VM-04', price:'54', weight: '1.67', src: './img/Add/Add_10.jpg'},
+		{id: '35', title: 'Heavy Boy Truck Trailer VM-04', price:'24', weight: '0.7', src: './img/Add/Add_11.jpg'},
+		{id: '36', title: 'Flexi-Cubus Model', price:'7', weight: '0.11', src: './img/Add/Add_12.jpg'}
+	]
+
+.addons
+	h2.addons__heading.ugears-heading Step 2 from 3. Select your Add-Ons
+	.addons-wrapper
+		each addon in addons
+			label.itembox(for=addon.id)
+				i.fas.fa-check-circle.item__checked
+				input.item__add(id=addon.id type="checkbox" data-id=addon.id price=addon.price weight=addon.weight)
+				img.item__img(src=addon.src)
+				p.item__title= addon.title
+				p.item__price= addon.price +'$'
+				.counter-wrap
+					input.item__remove(type="button" value="-")
+					p.addon__count 0
+					input.item__plus(type="button" value="+")
+				a.zoom-in(href=addons.src title="Zoom the image" target="_blank")
+					i.fas.fa-images

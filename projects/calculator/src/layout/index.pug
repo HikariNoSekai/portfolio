@@ -1,0 +1,10 @@
+extends ../template.pug
+block link
+	-var selected = 'Home'
+block title
+	| UGEARS: Mechanical Evolution Highlights Kickstarter Campaign
+block content
+	main.maincontent
+		include ../components/items/items
+		include ../components/addons/addons
+		include ../components/results/result

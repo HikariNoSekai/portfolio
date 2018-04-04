@@ -1,0 +1,36 @@
+-
+	var items = [
+		{id: '5', title: 'Super Early Bird: Horse-Mechanoid', price:'30', weight: '1.33', src: './img/Early/Ear_01.jpg'},
+		{id: '6', title: 'Early Bird: Horse-Mechanoid', price:'35', weight: '1.33', src: './img/Early/Ear_01.jpg'},
+		{id: '7', title: 'Early Bird: Pair of Horse-Mechanoids', price:'69', weight: '2.66', src: './img/Early/Ear_03.jpg'},
+		{id: '8', title: 'Early Bird: Aviator Model', price:'49', weight: '1.85', src: './img/Early/Ear_04.jpg'},
+		{id: '9', title: 'Early Bird: Tower Windmill Model', price:'49', weight: '1.75', src: './img/Early/Ear_05.jpg'},
+		{id: '10', title: 'Early Bird Horse-Mechanoid  Collection', price:'165', weight: '6.37', tips: 'Horse-Mechanoid  + Aviator Model + Tower Windmill + Secret Model + Flexi-Cubus as a Gift', src: './img/Early/Ear_06.jpg'},
+		{id: '12', title: 'Horse-Mechanoid', price:'39', weight: '1.33', src: './img/Camp/cam_01.jpg'},
+		{id: '13', title: 'A Pair of Horse-Mechanoids', price:'77', weight: '2.66', src: './img/Camp/cam_02.jpg'},
+		{id: '14', title: 'Horse-Mechanoid + Secret Model', price:'73', weight: '2.66', src: './img/Camp/cam_03.jpg'},
+		{id: '15', title: 'Tower Windmill Model', price:'54', weight: '1.75', src: './img/Camp/cam_04.jpg'},
+		{id: '16', title: 'Tower Windmill + Secret Model', price:'88', weight: '3.08', src: './img/Camp/cam_05.jpg'},
+		{id: '17', title: 'Aviator Model', price:'54', weight: '1.85', src: './img/Camp/cam_06.jpg'},
+		{id: '18', title: 'Aviator + Secret Model', price:'88', weight: '3.18', src: './img/Camp/cam_07.jpg'},
+		{id: '19', title: 'Horse-Mechanoid Collection', price:'179', weight: '6.37', tips: 'Horse-Mechanoid  +  Aviator Model + Tower Windmill + Secret Model +  Flexi-Cubus as a Gift ', src: './img/Camp/cam_08.jpg'},
+		{id: '20', title: 'V-Express Steam Train', price:'54', weight: '1.67', src: './img/Camp/cam_09.jpg'},
+		{id: '21', title: 'Heavy Boy Truck VM-04', price:'54', weight: '1.67', src: './img/Camp/cam_10.jpg'},
+		{id: '22', title: 'Ugears Mechanical Journey Collection', price:'385', weight: '14.12', tips: 'Horse-Mechanoid , Archballista-Tower, Stagecoach, Aviator, Roadster, Bike, Tower Windmill, V-Express Steam Train, Flexi-Cubus, Грузовик Ветер, Secret Model', src: './img/Camp/cam_11.jpg'},
+		{id: '23', title: 'All 30 UGEARS Models + Secret Model as a Gift', price:'999', weight: '30.10', tips: 'Mechanical Box, Theater, Tractor, Timer, Dynamometer, Tram on Rails, Pneumatic Engine, Combine, Safe, Steam Locomotive with Tender, Truck UGM-11, Mechanical Flower, Combination Lock,  Tanker, Heavy Boy Truck VM-04, Tram Line, Date Navigator, Rail Mounted Manipulator, Hurdy-Gurdy, Treasure Box, U-9 Grand Prix Car, Horse-Mechanoid , Archballista-Tower, Stagecoach, Aviator, Roadster, Bike, Tower Windmill, V-Express Steam Train, Flexi-Cubus, Secret Model', src: './img/Camp/cam_12.jpg'}
+	]
+.main__items
+	h2.items__heading.ugears-heading Step 1 from 3. Select your reward tier
+	.items-wrap
+		each item in items
+			label.itembox(for=item.id)
+				i.fas.fa-check-circle.item__checked
+				input.item__add(id=item.id type="radio" name="main-item" data-id=item.id price=item.price weight=item.weight)
+				img.item__img(src=item.src)
+				p.item__title= item.title
+				if (item.tips)
+					.tooltip
+						i.fas.fa-info-circle.tooltip-img
+						span.tooltiptext.item__title= item.tips
+				a.zoom-in(href=item.src title="Zoom the image" target="_blank")
+					i.fas.fa-images
